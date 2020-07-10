@@ -14,3 +14,9 @@ lst[1:10] # [2, 3, 4] same as omitting ending index
 num = operator.add(2,3)
 num = math.sqrt(45)
 num = cmath.sqrt(34)
+# any và all
+a = [1,2,3,4]
+checker = any(item>2 for item in a)
+checker = all(item>=2 for item in a)
+print("right")
+
