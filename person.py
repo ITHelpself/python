@@ -37,3 +37,8 @@ Person.countPerson()
 print(Person.getCount())
 specialPerson = SpecialPerson("hoa",43)
 print(specialPerson.__str__())
+# thêm getName vào trong Person class
+def getName(self):
+    return self.name
+Person.getName = getName
+print(person.getName())
