@@ -14,6 +14,8 @@ class Person:
     @staticmethod
     def getCount():
         return Person.count
+    def from_full_name(self,name):
+        pass #TODO: from full file
 class SpecialPerson(Person):
     def __init__(self, name, rewardMark):
         super(SpecialPerson, self).__init__(name)
