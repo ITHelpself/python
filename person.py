@@ -22,6 +22,13 @@ class SpecialPerson(Person):
         self.rewardMark = rewardMark
     def __str__(self):
         return str(self.name) + " " + str(self.rewardMark)
+class Dog:
+    def __init__(self):
+        self.name ="default"
+    def __str__(self):
+        return 'go go go!'
+def in_the_forest(object):
+    print(object.__str__())
 # people
 people = [{'name':'chandan','age':20,'salary':2000},
 {'name':'chetan','age':18,'salary':5000},
@@ -44,3 +51,6 @@ def getName(self):
     return self.name
 Person.getName = getName
 print(person.getName())
+# đa hình
+dog = Dog()
+in_the_forest(dog)
